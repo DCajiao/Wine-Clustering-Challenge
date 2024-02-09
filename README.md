@@ -48,7 +48,7 @@ In the clustering analysis process, the scikit-learn library and the elbow metho
 
 For this purpose, the elbow method was applied to determine the optimal number of clusters for wine clustering.
 
-![https://raw.githubusercontent.com/DCajiao/Wine-Clustering-Challenge/main/graphics/elbowmethod/elbowmethod.png](https://raw.githubusercontent.com/DCajiao/Wine-Clustering-Challenge/main/graphics/elbowmethod/elbowmethod.png)
+![https://raw.githubusercontent.com/DCajiao/Wine-Clustering-Challenge/main/graphics/elbowmethod/elbowmethod.png](https://raw.githubusercontent.com/DCajiao/Wine-Clustering-Challenge/main/graphics/clustering/elbowmethod.png)
 
 The result of this process tells us that the optimal number of clusters is at 3. This is evident in the graph, where we can see that this point represents the inflection point, suggesting a natural division of the data into three distinct groups. Moreover, according to the context of the dataset, the wines come from 3 different areas of Italy, which coincides with the conclusions of the elbow method. This is why, in this case, clustering was performed with 3 clusters, which represent each crop, respectively.
 
