@@ -119,6 +119,12 @@ input, select, textarea {
     height: 100%;
 }
 
+/* Divider Dashed */
+hr.dashed {
+	border-top: 1px dashed;
+	border-bottom: none;
+}
+
 
 /* Type */
 
