@@ -50,7 +50,7 @@ def get_json_data(filename):
     except Exception as e:
         raise RuntimeError(f"Error reading CSV: {e}")
 
-@app.route('/api', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_clustered_data():
     try:
         process_data()
