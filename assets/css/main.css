@@ -144,6 +144,7 @@ hr.dashed {
 
 			html {
 				font-size: 11pt;
+				
 			}
 
 		}
@@ -1241,7 +1242,9 @@ hr.dashed {
 			#wrapper {
 				padding: 2rem 1rem;
 			}
-
+			#bg:after {
+			background-image: url("../../images/bg-responsive.jpg");
+			}
 		}
 
 		@media screen and (max-width: 480px) {
