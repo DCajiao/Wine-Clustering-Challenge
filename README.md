@@ -6,7 +6,7 @@ This project focuses on the analysis of a dataset containing the results of a ch
 
 ## About the branches of the Repository:
 
-This project managed not only to perform Clustering techniques, Data Science, development, dockerization and deployment of an ([API](https://dcajiao-wine-clustering-api.onrender.com/)) to perform queries on the dataset resulting from clustering, it also managed to deploy a ([Web Page](https://dcajiao-wine-clustering.onrender.com/)) to display the results using *creative ideas and storytelling.*
+This project managed not only to perform Clustering techniques, Data Science, development, dockerization and deployment of an ([API](https://github.com/DCajiao/Wine-Clustering-Challenge/tree/API?tab=readme-ov-file)) to perform queries on the dataset resulting from clustering, it also managed to deploy a ([Web Page](https://github.com/DCajiao/Wine-Clustering-Challenge/tree/webpage)) to display the results using *creative ideas and storytelling.*
 
 To accomplish this, I made use of [Render.com](http://render.com/)'s free service. This service connects directly with this Github repository to make specific deployments by Branches and/or Commits, so, being a free service, it was not possible to deploy everything in the same direction since the free service has certain processing limitations, so each Branch of this repository (API and webpage) had to be deployed as a separate service each. However, this is just a technical detail, since everything works correctly and is mentioned to be taken into account when reviewing this code.
 
