@@ -43,7 +43,6 @@
 					<li><a href="#results">Results</a></li>
 					<li><a href="#api">API</a></li>
 					<li><a href="#github">Github</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
 		</header>
@@ -86,32 +85,45 @@
 			<article id="results">
 				<h2 class="major">Results</h2>
 				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-
-
-				<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
-					Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer
-					sollicitudin mauris nec lorem luctus ultrices.</p>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna
-					sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas
-					laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat
-					tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-					tempus.</p>
+				<P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perspiciatis placeat quod provident
+					iure! Molestias dolor aliquid explicabo non illo? Voluptate dignissimos minus maxime expedita
+					temporibus quis officia esse in?</P>
 			</article>
 			<!-- API -->
 			<article id="api">
-				<h2 class="major">API</h2>
-				<span class="image main"><img src="images/api.jpg" alt="" /></span>
-				<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at
-					eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-					lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada
-					fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-					dolor sit amet.</p>
-				<p>You can test the API with postman with this url: <br><u>dcajiao-wine-clustering-api.onrender.com</u>
+				<h2 class="major">API Wine Clustering</h2>
+				<span class="image main"><img src="images/api.png" alt="API" /></span>
+				<h3>How does the Wine Clustering API work?</h3>
+				<p>With each request, the Wine Clustering API consumes the google API to obtain the dataset (csv file)
+					again in each execution, this is thought so that in case there is an update of data in the online
+					csv, the API can consume that new data to process it later... </p>
+				<p>Once the data is obtained in real time, the Wine Clustering API loads the content of the dataset to a
+					<a href="https://pandas.pydata.org">Pandas</a> dataframe to subsequently run a
+					<a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">KMeans
+						model</a> that allows us to classify the wines in 3 different cultivars (why in 3 cultivars?, in
+					the <a href="https://github.com/DCajiao/Wine-Clustering-Challenge/tree/API">Github repository</a>,
+					you will find more details about the technical and mathematical process that
+					was applied to reach this value).
 				</p>
+				<p>
+					Once the wines are classified, the Wine Clustering API performs a labeling of the results obtained
+					by the KMeans classification, or in other words, it attaches a label about the origin of that wine:
+					Cultivar 1, Cultivar 2 or Cultivar 3? well, thanks to the Wine Clustering API we can know...
+				</p>
+				<p>If you want to get the classified dataset, I invite you to make use of the Wine Clustering API. You
+					can make the request to this link.</p>
+				<pre><code>dcajiao-wine-clustering-api.onrender.com</code></pre>
+				<p>Or access through your browser on the following button:</p>
 				<ul class="actions">
 					<li><a href="https://dcajiao-wine-clustering-api.onrender.com" class="button icon brands fa-docker">
-							API</a></li>
+							API ACCESS</a></li>
 				</ul>
+				<blockquote>The API is currently deployed on a free <a href="https://render.com">Render</a> service, so
+					it may occasionally take about 8s to reload each request, please be patient.</blockquote>
+				<p>You can find more information about the deployment, the technologies and the containerization method
+					in the <a href="https://github.com/DCajiao/Wine-Clustering-Challenge/tree/API">Github
+						repository</a>.</p>
+				</section>
 			</article>
 
 			<!-- GitHub -->
@@ -393,7 +405,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</section>
 
 			</article>
-
 		</div>
 
 		<!-- Footer -->
