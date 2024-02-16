@@ -37,7 +37,7 @@ Or if you want to make the request to the already deployed API, you can also spe
 ```Python
 import requests
 
-url = '<dcajiao-wine-clustering-api.onrender.com>'
+url = 'dcajiao-wine-clustering-api.onrender.com'
 response = requests.get(url)
 
 if response.status_code == 200:
